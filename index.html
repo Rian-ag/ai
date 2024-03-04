@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/ai_chat.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <img src="./images_jh/sam_index.png" alt="" onclick="alert('a');" style="max-width:100%;" />
@@ -27,124 +29,189 @@
             <!-- <button onclick="ai_babysuni.active();"><img src="./images_jh/btn_ai_icon.png" alt="" /></button> -->
             <div class="ai_button" onclick="ai_babysuni.active();">
                 <svg-animate trigger="loop">
-                    <svg viewBox="0 0 112 174" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="3" anim:ease="linear">
-                      <g id="ani-1" clip-path="url(#clip0_331_2)">
-                        <ellipse id="Ellipse 151" cx="57.9591" cy="161.351" rx="41.922" ry="11.6492" fill="url(#paint0_radial_331_2)" anim:opacity="1[1.9:2.1:0.5:ease-in-out][2.1:2.3:1:ease-in-out]"></ellipse>
-                        <ellipse id="Ellipse 1223" cx="18.4108" cy="36.7934" rx="7.29078" ry="7.16875" fill="url(#paint1_linear_331_2)" anim:opacity="1[0:0.1:0:ease-in-out][0.1:0.4:0:ease-in-out][0.4:0.5:1:ease-in-out][0.5:0.8:0:ease-in-out][0.8:1:1:ease-in-out]" anim:x="76[0:0.5:0:ease-in-out][0.5:1:76:ease-in-out]" anim:y="0[1.9:2.1:-28:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]"></ellipse>
-                        <g id="Group 9">
-                          <g id="Group 8">
-                            <g id="Group 5" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
-                              <ellipse id="Ellipse 1226" cx="6.35798" cy="10.7904" rx="6.35798" ry="10.7904" transform="matrix(0.896199 -0.443653 0.455763 0.890101 90.7686 60.3573)" fill="#FF3F61"></ellipse>
-                              <ellipse id="Ellipse 1227" cx="6.35798" cy="10.7904" rx="6.35798" ry="10.7904" transform="matrix(-0.896199 -0.443653 -0.455763 0.890101 21.2313 60.3573)" fill="#FF5270"></ellipse>
-                            </g>
-                            <g id="Group 7">
-                              <g id="Group 6">
-                                <ellipse id="Ellipse 149" cx="56.1369" cy="97.7282" rx="54.6808" ry="57.35" fill="url(#paint2_linear_331_2)" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]"></ellipse>
-                                <g id="Mask group" opacity="0.5" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
-                                  <mask id="mask0_331_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="40" width="110" height="116">
-                                    <ellipse id="Ellipse 153" cx="56.1369" cy="97.7282" rx="54.6808" ry="57.35" fill="url(#paint3_linear_331_2)"></ellipse>
-                                  </mask>
-                                  <g mask="url(#mask0_331_2)">
-                                    <path id="Vector 1" d="M35.4712 40.1374L49.7093 55.8515C50.0884 56.2699 50.6267 56.5086 51.1914 56.5086H61.0832C61.6478 56.5086 62.1862 56.2699 62.5653 55.8515L76.8034 40.1375C77.9682 38.8519 77.056 36.7946 75.3213 36.7946H36.9533C35.2186 36.7946 34.3064 38.8519 35.4712 40.1374Z" fill="url(#paint4_linear_331_2)"></path>
-                                  </g>
+                    <svg viewBox="0 0 112 174" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%"
+                        anim:duration="3" anim:ease="linear">
+                        <g id="ani-1" clip-path="url(#clip0_331_2)">
+                            <ellipse id="Ellipse 151" cx="57.9591" cy="161.351" rx="41.922" ry="11.6492"
+                                fill="url(#paint0_radial_331_2)"
+                                anim:opacity="1[1.9:2.1:0.5:ease-in-out][2.1:2.3:1:ease-in-out]"></ellipse>
+                            <ellipse id="Ellipse 1223" cx="18.4108" cy="36.7934" rx="7.29078" ry="7.16875"
+                                fill="url(#paint1_linear_331_2)"
+                                anim:opacity="1[0:0.1:0:ease-in-out][0.1:0.4:0:ease-in-out][0.4:0.5:1:ease-in-out][0.5:0.8:0:ease-in-out][0.8:1:1:ease-in-out]"
+                                anim:x="76[0:0.5:0:ease-in-out][0.5:1:76:ease-in-out]"
+                                anim:y="0[1.9:2.1:-28:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                            </ellipse>
+                            <g id="Group 9">
+                                <g id="Group 8">
+                                    <g id="Group 5"
+                                        anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                        <ellipse id="Ellipse 1226" cx="6.35798" cy="10.7904" rx="6.35798" ry="10.7904"
+                                            transform="matrix(0.896199 -0.443653 0.455763 0.890101 90.7686 60.3573)"
+                                            fill="#FF3F61"></ellipse>
+                                        <ellipse id="Ellipse 1227" cx="6.35798" cy="10.7904" rx="6.35798" ry="10.7904"
+                                            transform="matrix(-0.896199 -0.443653 -0.455763 0.890101 21.2313 60.3573)"
+                                            fill="#FF5270"></ellipse>
+                                    </g>
+                                    <g id="Group 7">
+                                        <g id="Group 6">
+                                            <ellipse id="Ellipse 149" cx="56.1369" cy="97.7282" rx="54.6808" ry="57.35"
+                                                fill="url(#paint2_linear_331_2)"
+                                                anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                            </ellipse>
+                                            <g id="Mask group" opacity="0.5"
+                                                anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                                <mask id="mask0_331_2" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="1" y="40" width="110" height="116">
+                                                    <ellipse id="Ellipse 153" cx="56.1369" cy="97.7282" rx="54.6808"
+                                                        ry="57.35" fill="url(#paint3_linear_331_2)"></ellipse>
+                                                </mask>
+                                                <g mask="url(#mask0_331_2)">
+                                                    <path id="Vector 1"
+                                                        d="M35.4712 40.1374L49.7093 55.8515C50.0884 56.2699 50.6267 56.5086 51.1914 56.5086H61.0832C61.6478 56.5086 62.1862 56.2699 62.5653 55.8515L76.8034 40.1375C77.9682 38.8519 77.056 36.7946 75.3213 36.7946H36.9533C35.2186 36.7946 34.3064 38.8519 35.4712 40.1374Z"
+                                                        fill="url(#paint4_linear_331_2)"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g id="Ellipse 150" opacity="0.98" filter="url(#filter0_i_331_2)"
+                                            anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                            <path
+                                                d="M97.5684 88.2525C97.5684 100.732 79.0237 108.337 56.1477 108.337C33.2716 108.337 14.7269 100.732 14.7269 88.2525C14.7269 75.7733 30.6315 50.5932 56.1477 50.5931C81.6638 50.5931 97.5684 75.7733 97.5684 88.2525Z"
+                                                fill="#F9F9F9"></path>
+                                        </g>
+                                    </g>
                                 </g>
-                              </g>
-                              <g id="Ellipse 150" opacity="0.98" filter="url(#filter0_i_331_2)" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
-                                <path d="M97.5684 88.2525C97.5684 100.732 79.0237 108.337 56.1477 108.337C33.2716 108.337 14.7269 100.732 14.7269 88.2525C14.7269 75.7733 30.6315 50.5932 56.1477 50.5931C81.6638 50.5931 97.5684 75.7733 97.5684 88.2525Z" fill="#F9F9F9"></path>
-                              </g>
+                                <g id="Group 2" opacity="0.9" filter="url(#filter1_d_331_2)"
+                                    anim:y="0[1.9:2.1:-23:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                    <rect id="Rectangle 5240" x="44.29" y="123.87" width="4.86056" height="12.8554"
+                                        rx="1.5" fill="white" fill-opacity="0.7"></rect>
+                                    <rect id="Rectangle 5241" x="52.3909" y="117.442" width="4.86056" height="25.7107"
+                                        rx="1.5" fill="white"></rect>
+                                    <rect id="Rectangle 5242" x="60.4926" y="120.655" width="4.86056" height="19.2831"
+                                        rx="1.5" fill="white" fill-opacity="0.8"></rect>
+                                    <rect id="Rectangle 5243" x="68.5934" y="125.476" width="4.86056" height="9.64153"
+                                        rx="1.5" fill="white" fill-opacity="0.7"></rect>
+                                </g>
                             </g>
-                          </g>
-                          <g id="Group 2" opacity="0.9" filter="url(#filter1_d_331_2)" anim:y="0[1.9:2.1:-23:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
-                            <rect id="Rectangle 5240" x="44.29" y="123.87" width="4.86056" height="12.8554" rx="1.5" fill="white" fill-opacity="0.7"></rect>
-                            <rect id="Rectangle 5241" x="52.3909" y="117.442" width="4.86056" height="25.7107" rx="1.5" fill="white"></rect>
-                            <rect id="Rectangle 5242" x="60.4926" y="120.655" width="4.86056" height="19.2831" rx="1.5" fill="white" fill-opacity="0.8"></rect>
-                            <rect id="Rectangle 5243" x="68.5934" y="125.476" width="4.86056" height="9.64153" rx="1.5" fill="white" fill-opacity="0.7"></rect>
-                          </g>
-                        </g>
-                        <g id="Group 4" anim:x="0[1:1.3:-7:ease-in-out][1.3:1.6:7:ease-in-out][1.6:1.9:0:ease-in-out]" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
-                          <ellipse id="Ellipse 1224" opacity="0.2" cx="76.1859" cy="80.7019" rx="10.9362" ry="6.27266" fill="url(#paint5_radial_331_2)"></ellipse>
-                          <ellipse id="Ellipse 1225" opacity="0.2" cx="37.9094" cy="80.7019" rx="10.9362" ry="6.27266" fill="url(#paint6_radial_331_2)"></ellipse>
-                          <ellipse id="Ellipse 153_2" cx="71.0617" cy="73.1151" rx="4.57693" ry="5.13761" fill="url(#paint7_linear_331_2)" fill-opacity="0.89"></ellipse>
-                          <ellipse id="Ellipse 154" cx="41.0287" cy="73.1151" rx="4.57693" ry="5.13761" fill="url(#paint8_linear_331_2)" fill-opacity="0.89"></ellipse>
-                          <path id="Vector" d="M37.2137 83.6773C49.6599 82.0974 62.2775 82.0974 74.7237 83.6773C74.7237 83.6773 75.4104 99.2752 55.9722 99.2752C36.534 99.2752 37.2137 83.6773 37.2137 83.6773Z" fill="#B90928"></path>
-                          <g id="Clip path group">
-                            <mask id="mask1_331_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="37" y="83" width="38" height="18">
-                              <g id="clip-path">
-                                <path id="Vector_2" d="M37.2137 84.5762C49.6599 82.9963 62.2775 82.9963 74.7237 84.5762C74.7237 84.5762 75.4104 100.174 55.9722 100.174C36.534 100.174 37.2137 84.5762 37.2137 84.5762Z" fill="white"></path>
-                              </g>
-                            </mask>
-                            <g mask="url(#mask1_331_2)">
-                              <g id="Group">
-                                <path id="Vector_3" d="M55.9725 107.854C64.7626 107.854 71.8883 104.415 71.8883 100.174C71.8883 95.932 64.7626 92.4934 55.9725 92.4934C47.1824 92.4934 40.0566 95.932 40.0566 100.174C40.0566 104.415 47.1824 107.854 55.9725 107.854Z" fill="white" fill-opacity="0.25"></path>
-                              </g>
+                            <g id="Group 4"
+                                anim:x="0[1:1.3:-7:ease-in-out][1.3:1.6:7:ease-in-out][1.6:1.9:0:ease-in-out]"
+                                anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                <ellipse id="Ellipse 1224" opacity="0.2" cx="76.1859" cy="80.7019" rx="10.9362"
+                                    ry="6.27266" fill="url(#paint5_radial_331_2)"></ellipse>
+                                <ellipse id="Ellipse 1225" opacity="0.2" cx="37.9094" cy="80.7019" rx="10.9362"
+                                    ry="6.27266" fill="url(#paint6_radial_331_2)"></ellipse>
+                                <ellipse id="Ellipse 153_2" cx="71.0617" cy="73.1151" rx="4.57693" ry="5.13761"
+                                    fill="url(#paint7_linear_331_2)" fill-opacity="0.89"></ellipse>
+                                <ellipse id="Ellipse 154" cx="41.0287" cy="73.1151" rx="4.57693" ry="5.13761"
+                                    fill="url(#paint8_linear_331_2)" fill-opacity="0.89"></ellipse>
+                                <path id="Vector"
+                                    d="M37.2137 83.6773C49.6599 82.0974 62.2775 82.0974 74.7237 83.6773C74.7237 83.6773 75.4104 99.2752 55.9722 99.2752C36.534 99.2752 37.2137 83.6773 37.2137 83.6773Z"
+                                    fill="#B90928"></path>
+                                <g id="Clip path group">
+                                    <mask id="mask1_331_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="37"
+                                        y="83" width="38" height="18">
+                                        <g id="clip-path">
+                                            <path id="Vector_2"
+                                                d="M37.2137 84.5762C49.6599 82.9963 62.2775 82.9963 74.7237 84.5762C74.7237 84.5762 75.4104 100.174 55.9722 100.174C36.534 100.174 37.2137 84.5762 37.2137 84.5762Z"
+                                                fill="white"></path>
+                                        </g>
+                                    </mask>
+                                    <g mask="url(#mask1_331_2)">
+                                        <g id="Group">
+                                            <path id="Vector_3"
+                                                d="M55.9725 107.854C64.7626 107.854 71.8883 104.415 71.8883 100.174C71.8883 95.932 64.7626 92.4934 55.9725 92.4934C47.1824 92.4934 40.0566 95.932 40.0566 100.174C40.0566 104.415 47.1824 107.854 55.9725 107.854Z"
+                                                fill="white" fill-opacity="0.25"></path>
+                                        </g>
+                                    </g>
+                                </g>
                             </g>
-                          </g>
                         </g>
-                      </g>
-                      <defs>
-                        <filter id="filter0_i_331_2" x="12.7269" y="48.5931" width="84.8414" height="59.7443" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                          <feOffset dx="-2" dy="-2"></feOffset>
-                          <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                          <feColorMatrix type="matrix" values="0 0 0 0 0.364846 0 0 0 0 0.500412 0 0 0 0 0.59858 0 0 0 0.2 0"></feColorMatrix>
-                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_331_2"></feBlend>
-                        </filter>
-                        <filter id="filter1_d_331_2" x="40.29" y="117.442" width="37.1639" height="33.7107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                          <feOffset dy="4"></feOffset>
-                          <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                          <feComposite in2="hardAlpha" operator="out"></feComposite>
-                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_331_2"></feBlend>
-                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_331_2" result="shape"></feBlend>
-                        </filter>
-                        <radialGradient id="paint0_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(57.9591 161.351) rotate(90) scale(11.6492 41.922)">
-                          <stop stop-opacity="0.29"></stop>
-                          <stop offset="1" stop-opacity="0"></stop>
-                        </radialGradient>
-                        <linearGradient id="paint1_linear_331_2" x1="15.6767" y1="32.313" x2="21.8908" y2="44.0498" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FF103A"></stop>
-                          <stop offset="1" stop-color="#BF0839"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_331_2" x1="16.949" y1="60.0923" x2="95.8559" y2="136.695" gradientUnits="userSpaceOnUse">
-                          <stop offset="0.02" stop-color="#FF103A"></stop>
-                          <stop offset="0.775" stop-color="#DD052B"></stop>
-                          <stop offset="1" stop-color="#BB093A"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint3_linear_331_2" x1="16.949" y1="60.0923" x2="95.8559" y2="136.695" gradientUnits="userSpaceOnUse">
-                          <stop offset="0.02" stop-color="#FF103A"></stop>
-                          <stop offset="0.355" stop-color="#DD052B"></stop>
-                          <stop offset="0.855" stop-color="#BB093A"></stop>
-                          <stop offset="0.995" stop-color="#9B0D37"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint4_linear_331_2" x1="52.4919" y1="34.1063" x2="56.0208" y2="52.0511" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FF103A"></stop>
-                          <stop offset="1" stop-color="#9B0825"></stop>
-                        </linearGradient>
-                        <radialGradient id="paint5_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(76.1859 80.7019) rotate(90) scale(6.27266 10.9362)">
-                          <stop stop-color="#FF1044"></stop>
-                          <stop offset="1" stop-color="#FF103A" stop-opacity="0"></stop>
-                        </radialGradient>
-                        <radialGradient id="paint6_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(37.9094 80.7019) rotate(90) scale(6.27266 10.9362)">
-                          <stop stop-color="#FF1044"></stop>
-                          <stop offset="1" stop-color="#FF103A" stop-opacity="0"></stop>
-                        </radialGradient>
-                        <linearGradient id="paint7_linear_331_2" x1="71.0617" y1="67.9775" x2="71.0617" y2="78.2527" gradientUnits="userSpaceOnUse">
-                          <stop></stop>
-                          <stop offset="1" stop-opacity="0.61"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint8_linear_331_2" x1="41.0287" y1="67.9775" x2="41.0287" y2="78.2527" gradientUnits="userSpaceOnUse">
-                          <stop></stop>
-                          <stop offset="1" stop-opacity="0.61"></stop>
-                        </linearGradient>
-                        <clipPath id="clip0_331_2">
-                          <rect width="112" height="173.38" fill="white" transform="matrix(1 0 0 -1 0 173.38)"></rect>
-                        </clipPath>
-                      </defs>
+                        <defs>
+                            <filter id="filter0_i_331_2" x="12.7269" y="48.5931" width="84.8414" height="59.7443"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                                </feBlend>
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                </feColorMatrix>
+                                <feOffset dx="-2" dy="-2"></feOffset>
+                                <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.364846 0 0 0 0 0.500412 0 0 0 0 0.59858 0 0 0 0.2 0">
+                                </feColorMatrix>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_331_2"></feBlend>
+                            </filter>
+                            <filter id="filter1_d_331_2" x="40.29" y="117.442" width="37.1639" height="33.7107"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                </feColorMatrix>
+                                <feOffset dy="4"></feOffset>
+                                <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                </feColorMatrix>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_331_2">
+                                </feBlend>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_331_2" result="shape">
+                                </feBlend>
+                            </filter>
+                            <radialGradient id="paint0_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(57.9591 161.351) rotate(90) scale(11.6492 41.922)">
+                                <stop stop-opacity="0.29"></stop>
+                                <stop offset="1" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <linearGradient id="paint1_linear_331_2" x1="15.6767" y1="32.313" x2="21.8908" y2="44.0498"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF103A"></stop>
+                                <stop offset="1" stop-color="#BF0839"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_331_2" x1="16.949" y1="60.0923" x2="95.8559" y2="136.695"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.02" stop-color="#FF103A"></stop>
+                                <stop offset="0.775" stop-color="#DD052B"></stop>
+                                <stop offset="1" stop-color="#BB093A"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_331_2" x1="16.949" y1="60.0923" x2="95.8559" y2="136.695"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.02" stop-color="#FF103A"></stop>
+                                <stop offset="0.355" stop-color="#DD052B"></stop>
+                                <stop offset="0.855" stop-color="#BB093A"></stop>
+                                <stop offset="0.995" stop-color="#9B0D37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_331_2" x1="52.4919" y1="34.1063" x2="56.0208" y2="52.0511"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF103A"></stop>
+                                <stop offset="1" stop-color="#9B0825"></stop>
+                            </linearGradient>
+                            <radialGradient id="paint5_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(76.1859 80.7019) rotate(90) scale(6.27266 10.9362)">
+                                <stop stop-color="#FF1044"></stop>
+                                <stop offset="1" stop-color="#FF103A" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <radialGradient id="paint6_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(37.9094 80.7019) rotate(90) scale(6.27266 10.9362)">
+                                <stop stop-color="#FF1044"></stop>
+                                <stop offset="1" stop-color="#FF103A" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <linearGradient id="paint7_linear_331_2" x1="71.0617" y1="67.9775" x2="71.0617" y2="78.2527"
+                                gradientUnits="userSpaceOnUse">
+                                <stop></stop>
+                                <stop offset="1" stop-opacity="0.61"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint8_linear_331_2" x1="41.0287" y1="67.9775" x2="41.0287" y2="78.2527"
+                                gradientUnits="userSpaceOnUse">
+                                <stop></stop>
+                                <stop offset="1" stop-opacity="0.61"></stop>
+                            </linearGradient>
+                            <clipPath id="clip0_331_2">
+                                <rect width="112" height="173.38" fill="white" transform="matrix(1 0 0 -1 0 173.38)">
+                                </rect>
+                            </clipPath>
+                        </defs>
                     </svg>
                 </svg-animate>
             </div>
@@ -157,7 +224,7 @@
             <!-- chat header -->
             <div class="ai_chat_header">
                 <img src="./images_jh/ai_chat_logo.png" alt="SUNI talk" style="height:24px;" />
-                
+
                 <div class="ai_chat_quick">
                     <button class="btn_history" onclick="ai_babysuni.reset(); sam_fnc.active_history();">이전 대화</button>
                     <button class="new_talk" onclick="modal.open();">새 대화</button>
@@ -171,13 +238,142 @@
             <div class="ai_chat_cont">
                 <!-- ai 시작화면 -->
                 <div class="ai_chat_cont_intro">
-                    <img src="./images_jh/Baby_SUNI_big.png" alt="" />
-                    <strong>안녕하세요 홍길동 님<br/> 저는 mySUNI를 200% 활용할 수 있도록 도와드리는 'OOO' 입니다.</strong>
-                    <p>mySUNI이용 중 궁금하신 사항이나 강의 내용요약 등의 도움이 필요하시면저에게 문의해 주세요.<br/> 홍길동 님께서 이용하신 mySUNI콘텐츠와mySUNI 사용이력을 바탕으로 관심을 가지실 만한 콘텐츠키워드를 다음에 정리해 보았습니다.</p>
+                    <!-- logo SVG -->
+                    <!-- <img src="./images_jh/Baby_SUNI_big.png" alt="" /> -->
+                    <div class="ai_icon">
+                        <svg-animate trigger="loop">
+                            <svg viewBox="0 0 112 174" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="3" anim:ease="linear">
+                              <g id="ani-1" clip-path="url(#clip0_331_2)">
+                                <ellipse id="Ellipse 151" cx="57.9591" cy="161.351" rx="41.922" ry="11.6492" fill="url(#paint0_radial_331_2)" anim:opacity="1[1.9:2.1:0.5:ease-in-out][2.1:2.3:1:ease-in-out]"></ellipse>
+                                <ellipse id="Ellipse 1223" cx="18.4108" cy="36.7934" rx="7.29078" ry="7.16875" fill="url(#paint1_linear_331_2)" anim:opacity="1[0:0.1:0:ease-in-out][0.1:0.4:0:ease-in-out][0.4:0.5:1:ease-in-out][0.5:0.8:0:ease-in-out][0.8:1:1:ease-in-out]" anim:x="76[0:0.5:0:ease-in-out][0.5:1:76:ease-in-out]" anim:y="0[1.9:2.1:-28:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]"></ellipse>
+                                <g id="Group 9">
+                                  <g id="Group 8">
+                                    <g id="Group 5" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                      <ellipse id="Ellipse 1226" cx="6.35798" cy="10.7904" rx="6.35798" ry="10.7904" transform="matrix(0.896199 -0.443653 0.455763 0.890101 90.7686 60.3573)" fill="#FF3F61"></ellipse>
+                                      <ellipse id="Ellipse 1227" cx="6.35798" cy="10.7904" rx="6.35798" ry="10.7904" transform="matrix(-0.896199 -0.443653 -0.455763 0.890101 21.2313 60.3573)" fill="#FF5270"></ellipse>
+                                    </g>
+                                    <g id="Group 7">
+                                      <g id="Group 6">
+                                        <ellipse id="Ellipse 149" cx="56.1369" cy="97.7282" rx="54.6808" ry="57.35" fill="url(#paint2_linear_331_2)" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]"></ellipse>
+                                        <g id="Mask group" opacity="0.5" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                          <mask id="mask0_331_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="40" width="110" height="116">
+                                            <ellipse id="Ellipse 153" cx="56.1369" cy="97.7282" rx="54.6808" ry="57.35" fill="url(#paint3_linear_331_2)"></ellipse>
+                                          </mask>
+                                          <g mask="url(#mask0_331_2)">
+                                            <path id="Vector 1" d="M35.4712 40.1374L49.7093 55.8515C50.0884 56.2699 50.6267 56.5086 51.1914 56.5086H61.0832C61.6478 56.5086 62.1862 56.2699 62.5653 55.8515L76.8034 40.1375C77.9682 38.8519 77.056 36.7946 75.3213 36.7946H36.9533C35.2186 36.7946 34.3064 38.8519 35.4712 40.1374Z" fill="url(#paint4_linear_331_2)"></path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g id="Ellipse 150" opacity="0.98" filter="url(#filter0_i_331_2)" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                        <path d="M97.5684 88.2525C97.5684 100.732 79.0237 108.337 56.1477 108.337C33.2716 108.337 14.7269 100.732 14.7269 88.2525C14.7269 75.7733 30.6315 50.5932 56.1477 50.5931C81.6638 50.5931 97.5684 75.7733 97.5684 88.2525Z" fill="#F9F9F9"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                  <g id="Group 2" opacity="0.9" filter="url(#filter1_d_331_2)" anim:y="0[1.9:2.1:-23:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                    <rect id="Rectangle 5240" x="44.29" y="123.87" width="4.86056" height="12.8554" rx="1.5" fill="white" fill-opacity="0.7"></rect>
+                                    <rect id="Rectangle 5241" x="52.3909" y="117.442" width="4.86056" height="25.7107" rx="1.5" fill="white"></rect>
+                                    <rect id="Rectangle 5242" x="60.4926" y="120.655" width="4.86056" height="19.2831" rx="1.5" fill="white" fill-opacity="0.8"></rect>
+                                    <rect id="Rectangle 5243" x="68.5934" y="125.476" width="4.86056" height="9.64153" rx="1.5" fill="white" fill-opacity="0.7"></rect>
+                                  </g>
+                                </g>
+                                <g id="Group 4" anim:x="0[1:1.3:-7:ease-in-out][1.3:1.6:7:ease-in-out][1.6:1.9:0:ease-in-out]" anim:y="0[1.9:2.1:-29:ease-in-out][2.1:2.4:14:ease-in-out][2.4:2.8:0:ease-in-out]">
+                                  <ellipse id="Ellipse 1224" opacity="0.2" cx="76.1859" cy="80.7019" rx="10.9362" ry="6.27266" fill="url(#paint5_radial_331_2)"></ellipse>
+                                  <ellipse id="Ellipse 1225" opacity="0.2" cx="37.9094" cy="80.7019" rx="10.9362" ry="6.27266" fill="url(#paint6_radial_331_2)"></ellipse>
+                                  <ellipse id="Ellipse 153_2" cx="71.0617" cy="73.1151" rx="4.57693" ry="5.13761" fill="url(#paint7_linear_331_2)" fill-opacity="0.89"></ellipse>
+                                  <ellipse id="Ellipse 154" cx="41.0287" cy="73.1151" rx="4.57693" ry="5.13761" fill="url(#paint8_linear_331_2)" fill-opacity="0.89"></ellipse>
+                                  <path id="Vector" d="M37.2137 83.6773C49.6599 82.0974 62.2775 82.0974 74.7237 83.6773C74.7237 83.6773 75.4104 99.2752 55.9722 99.2752C36.534 99.2752 37.2137 83.6773 37.2137 83.6773Z" fill="#B90928"></path>
+                                  <g id="Clip path group">
+                                    <mask id="mask1_331_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="37" y="83" width="38" height="18">
+                                      <g id="clip-path">
+                                        <path id="Vector_2" d="M37.2137 84.5762C49.6599 82.9963 62.2775 82.9963 74.7237 84.5762C74.7237 84.5762 75.4104 100.174 55.9722 100.174C36.534 100.174 37.2137 84.5762 37.2137 84.5762Z" fill="white"></path>
+                                      </g>
+                                    </mask>
+                                    <g mask="url(#mask1_331_2)">
+                                      <g id="Group">
+                                        <path id="Vector_3" d="M55.9725 107.854C64.7626 107.854 71.8883 104.415 71.8883 100.174C71.8883 95.932 64.7626 92.4934 55.9725 92.4934C47.1824 92.4934 40.0566 95.932 40.0566 100.174C40.0566 104.415 47.1824 107.854 55.9725 107.854Z" fill="white" fill-opacity="0.25"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                              <defs>
+                                <filter id="filter0_i_331_2" x="12.7269" y="48.5931" width="84.8414" height="59.7443" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                  <feOffset dx="-2" dy="-2"></feOffset>
+                                  <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                                  <feColorMatrix type="matrix" values="0 0 0 0 0.364846 0 0 0 0 0.500412 0 0 0 0 0.59858 0 0 0 0.2 0"></feColorMatrix>
+                                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_331_2"></feBlend>
+                                </filter>
+                                <filter id="filter1_d_331_2" x="40.29" y="117.442" width="37.1639" height="33.7107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                  <feOffset dy="4"></feOffset>
+                                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                  <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_331_2"></feBlend>
+                                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_331_2" result="shape"></feBlend>
+                                </filter>
+                                <radialGradient id="paint0_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(57.9591 161.351) rotate(90) scale(11.6492 41.922)">
+                                  <stop stop-opacity="0.29"></stop>
+                                  <stop offset="1" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <linearGradient id="paint1_linear_331_2" x1="15.6767" y1="32.313" x2="21.8908" y2="44.0498" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#FF103A"></stop>
+                                  <stop offset="1" stop-color="#BF0839"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_331_2" x1="16.949" y1="60.0923" x2="95.8559" y2="136.695" gradientUnits="userSpaceOnUse">
+                                  <stop offset="0.02" stop-color="#FF103A"></stop>
+                                  <stop offset="0.775" stop-color="#DD052B"></stop>
+                                  <stop offset="1" stop-color="#BB093A"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_331_2" x1="16.949" y1="60.0923" x2="95.8559" y2="136.695" gradientUnits="userSpaceOnUse">
+                                  <stop offset="0.02" stop-color="#FF103A"></stop>
+                                  <stop offset="0.355" stop-color="#DD052B"></stop>
+                                  <stop offset="0.855" stop-color="#BB093A"></stop>
+                                  <stop offset="0.995" stop-color="#9B0D37"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_331_2" x1="52.4919" y1="34.1063" x2="56.0208" y2="52.0511" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#FF103A"></stop>
+                                  <stop offset="1" stop-color="#9B0825"></stop>
+                                </linearGradient>
+                                <radialGradient id="paint5_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(76.1859 80.7019) rotate(90) scale(6.27266 10.9362)">
+                                  <stop stop-color="#FF1044"></stop>
+                                  <stop offset="1" stop-color="#FF103A" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <radialGradient id="paint6_radial_331_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(37.9094 80.7019) rotate(90) scale(6.27266 10.9362)">
+                                  <stop stop-color="#FF1044"></stop>
+                                  <stop offset="1" stop-color="#FF103A" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <linearGradient id="paint7_linear_331_2" x1="71.0617" y1="67.9775" x2="71.0617" y2="78.2527" gradientUnits="userSpaceOnUse">
+                                  <stop></stop>
+                                  <stop offset="1" stop-opacity="0.61"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint8_linear_331_2" x1="41.0287" y1="67.9775" x2="41.0287" y2="78.2527" gradientUnits="userSpaceOnUse">
+                                  <stop></stop>
+                                  <stop offset="1" stop-opacity="0.61"></stop>
+                                </linearGradient>
+                                <clipPath id="clip0_331_2">
+                                  <rect width="112" height="173.38" fill="white" transform="matrix(1 0 0 -1 0 173.38)"></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                        </svg-animate>
+                    </div>
+                    <!-- //logo SVG -->
+                    <strong>안녕하세요 홍길동 님<br /> 저는 mySUNI를 200% 활용할 수 있도록 도와드리는 'OOO' 입니다.</strong>
+                    <p>mySUNI이용 중 궁금하신 사항이나 강의 내용요약 등의 도움이 필요하시면저에게 문의해 주세요.<br /> 홍길동 님께서 이용하신 mySUNI콘텐츠와mySUNI 사용이력을
+                        바탕으로 관심을 가지실 만한 콘텐츠키워드를 다음에 정리해 보았습니다.</p>
                     <ul class="keyword">
-                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES 2024</button></li>
-                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">생성형 AI</button></li>
-                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗 GPT</button></li>
+                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES 2024</button>
+                        </li>
+                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">생성형 AI</button>
+                        </li>
+                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗 GPT</button>
+                        </li>
                     </ul>
                 </div>
                 <!-- //ai 시작화면 -->
@@ -208,9 +404,12 @@
                             <p>mySUNI 이용 중 궁금하신 사항이나 강의 내용요약 등의 도움이 필요하시면 저에게 문의해 주세요.</p>
                             <p>홍길동 님께서 이용하신 mySUNI 콘텐츠와 mySUNI 사용 이력을 바탕으로 관심을 가지실 만한 콘텐츠 키워드를 다음에 정리해 보았습니다.</p>
                             <ul class="keyword">
-                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES 2024</button></li>
-                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">생성형 AI</button></li>
-                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗 GPT</button></li>
+                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES
+                                        2024</button></li>
+                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">생성형
+                                        AI</button></li>
+                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗
+                                        GPT</button></li>
                             </ul>
 
                             <!-- comment action : active, :hover 시 활성화 이미지 노출됨 -->
@@ -259,14 +458,16 @@
                 <!-- chat input -->
                 <div class="ai_chat_input">
                     <!-- input -->
-                    <textarea id="msg" placeholder="대화를 시작해 보세요." rows="1" onkeydown="autoResize(this);" onkeyup="autoResize(this); ai_babysuni.val_chk(this);"></textarea>
+                    <textarea id="msg" placeholder="대화를 시작해 보세요." rows="1" onkeydown="autoResize(this);"
+                        onkeyup="autoResize(this); ai_babysuni.val_chk(this);"></textarea>
                     <!-- //input -->
                     <button class="btn_send" onclick="sam_fnc.send_msg()">Send</button>
                 </div>
                 <!-- //chat input -->
 
                 <!-- 이전대화 목록 일 때 -->
-                <button class="btn_confirm" onclick="this.closest('.ai_chat_wrap').classList.remove('history')"><em>대화하기</em></button>
+                <button class="btn_confirm"
+                    onclick="this.closest('.ai_chat_wrap').classList.remove('history')"><em>대화하기</em></button>
                 <!-- //이전대화 목록 일 때 -->
             </div>
             <!-- //chat bottom -->
@@ -298,4 +499,5 @@
     <script src="./js/ai_svg_ani.js"></script>
     <!-- //suni talk button(SVG) animation -->
 </body>
+
 </html>

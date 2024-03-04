@@ -52,6 +52,7 @@
 .ai_babysuni .ai_chat_cont_intro strong {margin-top:20px; color:#000; font-size:20px; line-height:32px; display:block;}
 .ai_babysuni .ai_chat_cont_intro p {color:#999; font-size:14px; line-height:22px;}
 .ai_babysuni .ai_chat_cont_intro .keyword {margin-top:48px;}
+.ai_babysuni .ai_chat_cont_intro .ai_icon {width:112px;}
 
 .ai_babysuni .talk_history {list-style:none;}
 .ai_babysuni .talk_history > li + li {margin-top:16px;}
