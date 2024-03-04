@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+/* Noto Sans KR */
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Thin.woff") format("woff"),
+  url("../fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Light.woff") format("woff"),
+  url("../fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Regular.woff") format("woff"),
+  url("../fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Medium.woff") format("woff"),
+  url("../fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Bold.woff") format("woff"),
+  url("../fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Black.woff") format("woff"),
+  url("../fonts/NotoSansKR-Black.woff2") format("woff2");
+}
+
+/* reset style */
+* {font-family: "Noto Sans KR", sans-serif; box-sizing:border-box !important; line-height:1.6;}
+html {font-size:1em; letter-spacing:-0.025em;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {-webkit-box-sizing:border-box;box-sizing:border-box; margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline;}
+pre {white-space:pre-wrap;}
+input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box;box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0;-webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
+blockquote,q {quotes:none;}
+/* input:focus,button:focus {border:none;} */
+table {width:100%; background:#fff; table-layout:fixed; border-spacing:0; border-collapse:collapse;}
+ul,ol,li {list-style:none;}
+a {color:#333; text-decoration:none;}
+img {max-width:100%;}
+em {font-style:normal; font-weight:normal;}
+button{background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
