@@ -9,9 +9,11 @@
 .ai_babysuni .ai_button_wrap .message_wrap > * {margin:0; padding:0;}
 .ai_babysuni .ai_button_wrap .ai_button {width:54px; padding:0; position:absolute; right:0; bottom:-80px; cursor:pointer; display:block;}
 
-.ai_babysuni .ai_chat_wrap {background-color:#fff; border:1px solid #d9d9d9; border-radius:16px; overflow:hidden; position:fixed; top:50px; right:0; bottom:50px; display:flex; flex-direction:column; transform:translateX(100%); transition:transform 0.25s;}
+.ai_babysuni .ai_chat_wrap {width:480px; background-color:#fff; border:1px solid #d9d9d9; border-radius:16px; overflow:hidden; position:fixed; top:50px; right:0; bottom:50px; display:flex; flex-direction:column; transform:translateX(100%); transition:transform 0.25s;}
 .ai_babysuni .ai_chat_wrap.active {transform:translateX(-30px);}
 .ai_babysuni .ai_chat_wrap.chatting {background-color:#efefef;}
+
+.ai_babysuni #resizer {width:4px; font-size:0; position:absolute; top:0; bottom:0; left:0; z-index:2; cursor:ew-resize;}
 
 .ai_babysuni .ai_chat_wrap .ai_chat_header {padding:20px 24px;}
 .ai_babysuni .ai_chat_wrap .ai_chat_header .ai_chat_close {width:24px; height:24px; font-size:0; background-image:url('../images_jh/icon_ai_chat_split.png'); background-position:0 0; background-repeat:no-repeat; background-size:250px auto; border:0; position:absolute; top:20px; right:24px; display:block;}
@@ -37,7 +39,7 @@
 .ai_babysuni .ai_chat_wrap .ai_chat_bottom .btn_confirm em {padding:15px 10px; color:#fff; font-size:16px; font-weight:bold; font-style:normal; display:block;}
 .ai_babysuni .ai_chat_wrap.history .ai_chat_bottom .btn_confirm {display:block;}
 
-.ai_babysuni .ai_chat_wrap .ai_chat_cont {width:480px; padding:0 24px; overflow:auto; position:relative; flex:1;}
+.ai_babysuni .ai_chat_wrap .ai_chat_cont {padding:0 24px; overflow:auto; position:relative; flex:1;}
 .ai_babysuni .ai_chat_wrap .ai_chat_cont::-webkit-scrollbar {width:10px;}
 .ai_babysuni .ai_chat_wrap .ai_chat_cont::-webkit-scrollbar-thumb {background:rgba(0,0,0,0.2); background-clip:padding-box; border:3px solid transparent; border-radius:8px;}
 .ai_babysuni .ai_chat_wrap .ai_chat_cont::-webkit-scrollbar-track {background:transparent;}
