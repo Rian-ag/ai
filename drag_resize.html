@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+    * {margin:0; padding:0;}
+    html, body {height:100%;}
+    #resizer {width:2px; cursor:ew-resize; position:absolute; top:0; bottom:0; left:0; z-index:1;}
+    .panel {width:480px; height:80vh; background-color:red; position:fixed; top:50%; right:20px; transform:translateY(-50%);}
+</style>
+
+</head>
+<body>
+
+<div class="panel">
+    <button id="resizer">handler</button>
+    Right
+</div>
+
+</body>
+
+<script> 
+    // 대상
+    const resizer = document.getElementById('resizer');
+    const panel = document.querySelector('.panel');
+    
+    // 마우스의 위치값 저장을 위해 선언
+    let x = 0;
+    let y = 0;
+    
+    // 크기 조절시 왼쪽 Element를 기준으로 삼기 위해 선언
+    let _width = 0;
+    
+    // resizer에 마우스 이벤트가 발생하면 실행하는 Handler
+    const mouseDownHandler = function (e) {
+        // 마우스 위치값을 가져와 x, y에 할당
+        x = e.clientX;
+        y = e.clientY;
+        // left Element에 Viewport 상 width 값을 가져와 넣음
+        _width = panel.getBoundingClientRect().width;
+    
+        // 마우스 이동과 해제 이벤트를 등록
+        document.addEventListener('mousemove', mouseMoveHandler);
+        document.addEventListener('mouseup', mouseUpHandler);
+    };
+
+    const mouseMoveHandler = function (e) {
+        // 마우스가 움직이면 기존 초기 마우스 위치에서 현재 위치값과의 차이를 계산
+        const dx = x - e.clientX;
+        const dy = e.clientY - y;
+
+        //console.log('m : '+_width+' / '+(dx + ' / '+dy));
+    
+          // 크기 조절 중 마우스 커서를 변경함
+        // class="resizer"에 적용하면 위치가 변경되면서 커서가 해제되기 때문에 body에 적용
+        document.body.style.cursor = 'col-resize';
+
+        panel.style.userSelect = 'none';
+        panel.style.pointerEvents = 'none';
+
+        const new_Width = (_width + dx);
+        if(479 < new_Width && new_Width < 781){
+            panel.style.width = new_Width+'px';
+        }
+    };
+
+    const mouseUpHandler = function () {
+        // 모든 커서 관련 사항은 마우스 이동이 끝나면 제거됨
+        document.body.style.removeProperty('cursor');
+
+        panel.style.removeProperty('user-select');
+        panel.style.removeProperty('pointer-events');
+
+        document.removeEventListener('mousemove', mouseMoveHandler);
+        document.removeEventListener('mouseup', mouseUpHandler);
+    };
+    
+    // 마우스 down 이벤트를 등록
+    resizer.addEventListener('mousedown', mouseDownHandler);
+    </script>
+
+</html>
