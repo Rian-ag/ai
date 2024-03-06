@@ -11,17 +11,23 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/ai_chat.js"></script>
+
+    <!-- swiper -->
+    <script src="./js/swiper.js"></script>
+    <link href="./css_jh/swiper.css" rel="stylesheet">
+    <!-- swiper -->
 </head>
 
 <body>
     <div id="wrap">
-        <img src="./images_jh/sam_index.png" alt="" onclick="alert('a');" style="max-width:100%;" />
+        <img src="./images_jh/sam_index.png" alt="" style="max-width:100%;" />
     </div>
 
     <!-- ai wrap -->
     <div class="ai_babysuni">
         <!-- open button -->
         <div class="ai_button_wrap">
+
             <div class="message_wrap">
                 <p>지금 도전중인 Badge를 확인 해보세요</p>
             </div>
@@ -221,6 +227,11 @@
 
         <!-- chat wrap -->
         <div class="ai_chat_wrap">
+
+            <!-- resizer -->
+            <button id="resizer">Resizer</button>
+            <!-- //resizer -->
+
             <!-- chat header -->
             <div class="ai_chat_header">
                 <img src="./images_jh/ai_chat_logo.png" alt="SUNI talk" style="height:24px;" />
@@ -368,11 +379,14 @@
                     <p>mySUNI이용 중 궁금하신 사항이나 강의 내용요약 등의 도움이 필요하시면저에게 문의해 주세요.<br /> 홍길동 님께서 이용하신 mySUNI콘텐츠와mySUNI 사용이력을
                         바탕으로 관심을 가지실 만한 콘텐츠키워드를 다음에 정리해 보았습니다.</p>
                     <ul class="keyword">
-                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES 2024</button>
+                        <li>
+                            <button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES 2024</button>
                         </li>
-                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">생성형 AI</button>
+                        <li>
+                            <button onclick="sam_fnc.swiper();">생성형 AI(intro)</button>
                         </li>
-                        <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗 GPT</button>
+                        <li>
+                            <button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗 GPT</button>
                         </li>
                     </ul>
                 </div>
@@ -404,12 +418,9 @@
                             <p>mySUNI 이용 중 궁금하신 사항이나 강의 내용요약 등의 도움이 필요하시면 저에게 문의해 주세요.</p>
                             <p>홍길동 님께서 이용하신 mySUNI 콘텐츠와 mySUNI 사용 이력을 바탕으로 관심을 가지실 만한 콘텐츠 키워드를 다음에 정리해 보았습니다.</p>
                             <ul class="keyword">
-                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES
-                                        2024</button></li>
-                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">생성형
-                                        AI</button></li>
-                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗
-                                        GPT</button></li>
+                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">CES 2024</button></li>
+                                <li><button onclick="sam_fnc.swiper();">생성형 AI(intro)</button></li>
+                                <li><button onclick="ai_babysuni.keyword_select(); sam_fnc.keyword_select();">챗 GPT</button></li>
                             </ul>
 
                             <!-- comment action : active, :hover 시 활성화 이미지 노출됨 -->
