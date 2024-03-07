@@ -186,11 +186,11 @@ const sam_fnc = {
                 <p>mySUNI에서 생성형 AI와 관련된 콘텐츠는 다음과 같습니다.</p>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./images_jh/sam_swiper_01.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./images_jh/sam_swiper_02.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./images_jh/sam_swiper_03.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./images_jh/sam_swiper_04.png" alt="" /></div>
-                        <div class="swiper-slide"><img src="./images_jh/sam_swiper_05.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./images/sam_swiper_01.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./images/sam_swiper_02.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./images/sam_swiper_03.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./images/sam_swiper_04.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./images/sam_swiper_05.png" alt="" /></div>
                     </div>
                 </div>
             </div>
