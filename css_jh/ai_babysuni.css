@@ -87,7 +87,7 @@
 .ai_babysuni .chat_sec.ai .chat_inner:after {width:8px; height:15px; background-position:-120px 0; left:-6px;}
 .ai_babysuni .chat_sec.user .chat_inner:after {width:9px; height:15px; background-position:-140px 0; right:-6px;}
 
-.ai_babysuni .keyword {list-style:none; display:inline-flex; gap:16px;}
+.ai_babysuni .keyword {list-style:none; display:inline-flex; justify-content:center;  align-items:center; flex-wrap:wrap; gap:16px;}
 .ai_babysuni .keyword button {padding:12px 20px; color:#666; font-size:14px; background-color:#fff; border:1px solid #d9d9d9; border-radius:22px; transition:all 0.25s;}
 .ai_babysuni .keyword button.active {padding:11px 20px; color:#DD052B; font-weight:bold; background-color:rgba(221, 5, 43, 0.05); border-color:#DD052B;}
 
@@ -126,3 +126,4 @@
   .ai_babysuni .ai_chat_wrap {max-width:calc(100% - 20px)}
   .ai_babysuni .ai_chat_wrap.active {transform:translateX(-10px);}
 }
+.scrollLock {overflow:hidden;}

@@ -1,7 +1,7 @@
 const ai_babysuni = {
     active: function(){ //채팅창 열기
         $('.ai_chat_wrap').addClass('active');
-
+        $('body').addClass('scrollLock');
         /* resize */
         // 대상
         const resizer = document.getElementById('resizer');
@@ -73,6 +73,7 @@ const ai_babysuni = {
 
     }, close: function(){ //채팅창 닫기
         $('.ai_chat_quick').removeAttr('style');
+        $('body').removeClass('scrollLock');
         $('.ai_chat_wrap').removeClass('active chatting history');
 
         $('.keyword button').removeClass('active');
