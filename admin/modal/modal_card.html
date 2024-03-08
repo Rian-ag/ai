@@ -1,0 +1,83 @@
+<link href="../css/modal.css" rel="stylesheet">
+
+<div class="ai_modal_content">
+    <h4>LMS 콘텐츠 요약/정리</h4>
+
+    <div class="table_wrap">
+        <table class="type_02">
+            <colgroup>
+                <col style="width:30%;" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>Card 목록</th>
+                    <td>Financial Story 이해</td>
+                </tr>
+                <tr>
+                    <th>입력형태 선택</th>
+                    <td>
+                        <div class="check_group">
+                            <label class="check" for="type01-1"><input type="radio" id="type01-1" name="type-1" /> 직접입력</label>
+                            <label class="check" for="type01-2"><input type="radio" id="type01-2" name="type-1" onclick="modal.open('#alert_wrap','alert_01');" /> 등록된 CUBE 정보 가져오기 <em class="badge_info">i</em></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>내용 입력</th>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <th>요약/정리 유형 선택 및 실행</th>
+                    <td>
+                        <div class="check_group">
+                            <label class="check" for="type02-1"><input type="radio" id="type02-1" name="type-2" /> CARD Style</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-2" disabled /> CUBE Style</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Type 선택 <em class="badge_info">i</em></th>
+                </tr>
+                <tr>
+                    <th>요약/정리 내용 추천</th>
+                    <td><textarea></textarea>
+                        <!-- comment action : active, :hover 시 활성화 이미지 노출됨 -->
+                        <ul class="comment_action">
+                            <li>
+                                <button class="good">좋아요</button>
+                                <!-- tooltip -->
+                                <span class="tooltip">좋은 답변이네요</span>
+                                <!-- //tooltip -->
+                            </li>
+                            <li>
+                                <button class="bad">싫어요</button>
+                                <!-- tooltip -->
+                                <span class="tooltip">아쉬운 답변이네요</span>
+                                <!-- //tooltip -->
+                            </li>
+                            <li>
+                                <button class="refresh">새로고침</button>
+                                <!-- tooltip -->
+                                <span class="tooltip">다른답변 보기</span>
+                                <!-- //tooltip -->
+                            </li>
+                            <li>
+                                <button class="copy">복사</button>
+                                <!-- tooltip -->
+                                <span class="tooltip">복사</span>
+                                <!-- //tooltip -->
+                            </li>
+                        </ul>
+                        <!-- //comment action -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="btnSection">
+        <button class="btn_cancel" onclick="modal.open('#alert_wrap', 'alert_02');"><em>초기화</em></button>
+        <button class="btn_confirm" onclick="modal.open('#alert_wrap', 'alert_03');"><em>확인</em></button>
+    </div>
+</div>

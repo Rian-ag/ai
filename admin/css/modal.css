@@ -1,0 +1,54 @@
+.ai_modal_content {font-size:14px;}
+.ai_modal_content h4 {margin-bottom:30px;}
+.ai_modal_content .btnSection {margin-top:30px;}
+.ai_modal_content button {background-color:transparent; border:0;}
+
+.ai_modal_content .table_wrap table {width:100%; border-collapse:collapse;}
+.ai_modal_content .table_wrap th, .table_wrap td {padding:15px; font-size:13px; border:1px solid #f1f1f1;}
+
+.ai_modal_content .table_wrap .type_02 th, .ai_modal_content .table_wrap .type_02 td {border-color:#dbdbdb;}
+.ai_modal_content .table_wrap .type_02 th {background-color:#f2f2f3; text-align:left;}
+.ai_modal_content .table_wrap .type_02 textarea {width:100%; min-height:150px; border:1px solid #dbdbdb;}
+
+.ai_modal_content .btnSection {display:flex; gap:10px; justify-content:center;}
+.ai_modal_content .btnSection [class*='btn_'] {min-width:250px; padding:0; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
+.ai_modal_content .btnSection [class*='btn_'] em {padding:10px; font-size:13px; font-style:normal; display:block;}
+
+.ai_modal_content .btnSection .btn_cancel {border-color:#3b4c80;}
+.ai_modal_content .btnSection .btn_cancel em {color:#3b4c80;}
+.ai_modal_content .btnSection .btn_confirm em {color:#fff; background-color:#3b4c80;}
+
+.ai_modal_content .check_group {display:flex; gap:20px 20px;}
+.ai_modal_content label.check:has(:disabled) {color:#b7b7b7;}
+
+.ai_modal_content .badge_info {width:18px; height:18px; color:#fff; font-size:11px; font-weight:bold; font-style:normal; background-color:#656565; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;}
+
+/* alert modal */
+#alert_wrap {background-color:rgba(0,0,0,0.35); position:fixed; top:0; right:0; bottom:0; left:0; z-index:1; display:none;}
+#alert_wrap.active {display:block;}
+#alert_wrap .modal_container {border-radius:4px; box-shadow:0 0 16px 4px rgba(0,0,0,0.2); overflow:hidden; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+#alert_wrap .btn_close {width:25px; height:25px; font-size:0; background-color:transparent; border:0; position:absolute; top:20px; right:20px; cursor:pointer;}
+#alert_wrap .btn_close:before, #alert_wrap .btn_close:after {width:100%; margin-top:10px; border-top:1px solid #222; content:''; position:absolute; top:0; left:0;}
+#alert_wrap .btn_close:before {transform:rotate(-45deg);}
+#alert_wrap .btn_close:after {transform:rotate(45deg);}
+
+#alert_wrap .modal_inner {min-width:400px; max-height:800px; padding:15px; background-color:#fff; overflow:auto;}
+#alert_wrap .modal_content {padding:40px 25px 25px; text-align:center; overflow:auto;}
+
+/* comment action */
+.comment_action {margin-top:20px; padding-top:12px; border-top:1px solid #efefef; list-style:none; display:flex; gap:16px;}
+.comment_action li {position:relative;}
+.comment_action button {width:24px; height:24px; font-size:0; background-image:url('../images/icon_ai_chat_split.png'); background-repeat:no-repeat; background-size:250px auto;}
+.comment_action .good {background-position:0 -70px}
+.comment_action .bad {background-position:-30px -70px}
+.comment_action .refresh {background-position:-60px -70px}
+.comment_action .copy {background-position:-90px -70px}
+.comment_action .good.active, .comment_action .good:hover {background-position:0 -100px}
+.comment_action .bad.active, .comment_action .bad:hover {background-position:-30px -100px}
+.comment_action .refresh.active, .comment_action .refresh:hover {background-position:-60px -100px}
+.comment_action .copy.active, .comment_action .copy:hover {background-position:-90px -100px}
+
+.comment_action .tooltip {padding:6px 8px; color:#fff; font-size:11px; white-space:nowrap; background-color:#222; border-radius:4px; opacity:0; position:absolute; bottom:32px; left:0; z-index:-1; transition:all 0.25s;}
+.comment_action .tooltip:after {width:10px; height:6px; background:url('../images/icon_ai_chat_split.png') -160px 0 no-repeat; background-size:250px auto; content:''; position:absolute; bottom:-4px; left:8px; display:block;}
+/* .comment_action li:hover .tooltip {display:block;} */
+.comment_action li:hover .tooltip {opacity:1; bottom:32px; z-index:1;}

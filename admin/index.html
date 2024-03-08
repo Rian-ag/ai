@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiOK</title>
+
+    <link href="./css/sample.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+
+    <script>
+        var el = '#modal_wrap',
+            cont;
+        var modal = {
+            open: function(el, cont){
+                $(el).addClass('active');
+
+                $.ajax({
+                    url:'./modal/'+cont+'.html', //호출할 파일 경로
+                    method:'get',
+                    success: function(html){
+                        $(el+' .modal_content').html(html);
+                    },
+                    complete: function(){},
+                    error: function(){}
+                });
+            },
+            close: function(el){
+                $(el).removeClass('active');
+                $(el).find('.modal_content').empty();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><img src="./images/logo.png" alt="" /></h1>
+            <ul class="gnb">
+                <li><a href="#none">회원관리</a></li>
+                <li><a href="#none">Learning 관리</a></li>
+                <li><a href="#none">서비스 관리</a></li>
+                <li><a href="#none">전시 관리</a></li>
+                <li><a href="#none">Certification 관리</a></li>
+                <li><a href="#none">Commuty 관리</a></li>
+            </ul>
+        </header>
+        <div id="container">
+            <div class="lnb">
+                <h2>Learning 관리</h2>
+                <dl>
+                    <dt>과정 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">Cube 관리</a></li>
+                            <li><a href="#none">Card 관리</a></li>
+                        </ul>
+                    </dd>
+                    <dt>승인 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">유료 과정</a></li>
+                            <li><a href="#none">개인학습 과정</a></li>
+                        </ul>
+                    </dd>
+                    <dt>외부 과정 학습 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">Linkdln 학습 관리</a></li>
+                            <li><a href="#none">Coursera 학습 관리</a></li>
+                        </ul>
+                    </dd>
+                    <dt>Test 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">Test 시험지 관리</a></li>
+                        </ul>
+                    </dd>
+                    <dt>Survey 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">Survey 설문지 관리</a></li>
+                        </ul>
+                    </dd>
+                    <dt>스크립트 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">스크립트 관리</a></li>
+                        </ul>
+                    </dd>
+                    <dt>진단 평가 관리</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#none">Digital Literacy 평가 관리</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="content">
+                <h2>Survey 설문지 관리</h2>
+                <section>
+                    <div class="board_info_wrap">
+                        <div class="btnSection">
+                            <button onclick="modal.open(el, 'modal_card');">LMS 콘텐츠 요약/정리 등록</button>
+                        </div>
+                    </div>
+                    <div class="table_wrap">
+                        <h4>Mapping card 정보</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Card 목록</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th></th>
+                                                <th>Card명</th>
+                                                <th>학습유형</th>
+                                                <th>Channel</th>
+                                                <th>등록일자</th>
+                                                <th>생성자</th>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="table_wrap">
+                        <h4>다국어 정보</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>지원 언어</th>
+                                    <td>KO, EN, ZH</td>
+                                    <th>기본 언어</th>
+                                    <td>KO</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div id="modal_wrap">
+        <div class="modal_container">
+            <div class="modal_inner">
+                <button class="btn_close" onclick="modal.close(el);">close</button>
+                <div class="modal_content"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <!-- alert_modal -->
+    <div id="alert_wrap">
+        <div class="modal_container">
+            <div class="modal_inner">
+                <button class="btn_close" onclick="modal.close('#alert_wrap');">close</button>
+                <div class="modal_content"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //alert_modal -->
+</body>
+</html>
