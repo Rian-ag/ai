@@ -11,7 +11,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th>Card 목록</th>
+                    <th>CARD Title</th>
                     <td>Financial Story 이해</td>
                 </tr>
                 <tr>
@@ -19,8 +19,17 @@
                     <td>
                         <div class="check_group">
                             <label class="check" for="type01-1"><input type="radio" id="type01-1" name="type-1" /> 직접입력</label>
-                            <label class="check" for="type01-2"><input type="radio" id="type01-2" name="type-1" onclick="modal.open('#alert_wrap','alert_01');" /> 등록된 CUBE 정보 가져오기 <em class="badge_info">i</em></label>
+                            <label class="check" for="type01-2"><input type="radio" id="type01-2" name="type-1" onclick="modal.open('#alert_wrap','alert_01');" /> 등록된 CUBE 정보 가져오기 
+                                <!-- 2024-03-11 tooltip 관련 html 태그수정 -->
+                                <button class="badge_info" onclick="tooltip_show(this)">
+                                    <i>i</i>
+                                    <p class="info_tooltip">팝업을 호출한 화면에 등록된 CUBE 정보 입니다.</p>
+                                </button>
+                                <!-- // 2024-03-11 tooltip 관련 html 태그수정 -->
+                           
+                            </label>
                         </div>
+                        
                     </td>
                 </tr>
                 <tr>
@@ -36,9 +45,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <th>Type 선택 <em class="badge_info">i</em></th>
-                </tr>
+               
                 <tr>
                     <th>요약/정리 내용 추천</th>
                     <td><textarea></textarea>

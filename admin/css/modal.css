@@ -8,10 +8,14 @@
 
 .ai_modal_content .table_wrap .type_02 th, .ai_modal_content .table_wrap .type_02 td {border-color:#dbdbdb;}
 .ai_modal_content .table_wrap .type_02 th {background-color:#f2f2f3; text-align:left;}
-.ai_modal_content .table_wrap .type_02 textarea {width:100%; min-height:150px; border:1px solid #dbdbdb;}
+/* 2024-03-11 textarea resize vetical추가 */
+.ai_modal_content .table_wrap .type_02 textarea {width:100%; min-height:150px; border:1px solid #dbdbdb; resize:vertical;}
+/* // 2024-03-11 ttextarea resize vetical추가 */
 
 .ai_modal_content .btnSection {display:flex; gap:10px; justify-content:center;}
-.ai_modal_content .btnSection [class*='btn_'] {min-width:250px; padding:0; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
+/* 2024-03-11 버튼 최소 사이즈 기존 250px -> 150px로 수정 */
+.ai_modal_content .btnSection [class*='btn_'] {min-width:150px; padding:0; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
+/* 2024-03-11 버튼 최소 사이즈 기존 250px -> 150px로 수정 */
 .ai_modal_content .btnSection [class*='btn_'] em {padding:10px; font-size:13px; font-style:normal; display:block;}
 
 .ai_modal_content .btnSection .btn_cancel {border-color:#3b4c80;}
@@ -21,7 +25,13 @@
 .ai_modal_content .check_group {display:flex; gap:20px 20px;}
 .ai_modal_content label.check:has(:disabled) {color:#b7b7b7;}
 
-.ai_modal_content .badge_info {width:18px; height:18px; color:#fff; font-size:11px; font-weight:bold; font-style:normal; background-color:#656565; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;}
+
+.ai_modal_content .badge_info {width:18px; height:18px; color:#fff; font-size:11px; font-weight:bold; font-style:normal; background-color:#656565; border-radius:50%; position:relative; display:inline-flex; align-items:center; justify-content:center;}
+/* 2024-03-11 tooltip 관련 css 추가 */
+.ai_modal_content .info_tooltip {max-width:326px; padding:8px; font-size:12px; color:#222; white-space:nowrap; border:1px solid #dbdbdb; border-radius:4px; background-color:#fff; position:absolute; left:-76px; top:21px; z-index:100; display:none;}
+.ai_modal_content .info_tooltip.show {display:block;}
+/* //2024-03-11 tooltip 관련 css 추가 */
+
 
 /* alert modal */
 #alert_wrap {background-color:rgba(0,0,0,0.35); position:fixed; top:0; right:0; bottom:0; left:0; z-index:1; display:none;}

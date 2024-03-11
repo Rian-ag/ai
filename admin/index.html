@@ -16,7 +16,7 @@
         var modal = {
             open: function(el, cont){
                 $(el).addClass('active');
-
+                $('#type01-1').removeAttr('checked','checked');
                 $.ajax({
                     url:'./modal/'+cont+'.html', //호출할 파일 경로
                     method:'get',
@@ -29,9 +29,19 @@
             },
             close: function(el){
                 $(el).removeClass('active');
+            /* 2024-03-11  cube 가져오기 팝업 클릭 후 디폴트값 변경 추가*/
+                $('#type01-1').attr('checked','checked');
                 $(el).find('.modal_content').empty();
+            /* // 2024-03-11  cube 가져오기 팝업 클릭 후 디폴트값 변경 추가*/
             }
         }
+        /* 2024-03-11 badge_info tooltip 관련 함수 추가 */
+        function tooltip_show(e){
+            $(e).children('.info_tooltip').toggleClass('show')
+        }
+        /* // 2024-03-11 badge_info tooltip 관련 함수 추가 */
+;
+
     </script>
 </head>
 <body>
@@ -103,7 +113,10 @@
                 <section>
                     <div class="board_info_wrap">
                         <div class="btnSection">
-                            <button onclick="modal.open(el, 'modal_card');">LMS 콘텐츠 요약/정리 등록</button>
+                            <!-- 2024-03-11 버튼 타이틀 수정 -->
+                            <button onclick="modal.open(el, 'modal_card');">AI 요약_card type</button>
+                            <button onclick="modal.open(el, 'modal_cube');">AI 요약_cube type</button>
+                            <!-- // 2024-03-11 버튼 타이틀 수정 -->
                         </div>
                     </div>
                     <div class="table_wrap">

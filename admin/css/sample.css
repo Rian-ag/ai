@@ -1,6 +1,9 @@
 * {margin:0; padding:0;}
 ul {list-style:none;}
 a {text-decoration:none;}
+/* 2024-03-11 em 태그 reset css 추가 */
+em, i {margin:0; padding:0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* //2024-03-11 em 태그 reset css 추가 */
 #wrap {min-width:1024px; height:100vh; background-color:#f4f7fd; overflow:hidden; display:flex; flex-direction:column;}
 
 header {padding:10px 0; background-color:#fff; border-bottom:1px solid #4b5a8a; display:flex; align-items:center;}
@@ -42,7 +45,9 @@ header ul a {padding:5px 8px; color:#222; font-size:14px; display:block;}
 #modal_wrap .modal_inner:has(.modal_content + .btnSection) .modal_content {height:calc(100% - 80px);}
 #modal_wrap .modal_content + .btnSection {padding:20px 0; position:absolute; right:0; bottom:0; left:0;}
 #modal_wrap .btnSection {display:flex; gap:10px; justify-content:center;}
-#modal_wrap .btnSection [class*='btn_'] {min-width:250px; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
+/* 2024-03-11 버튼 최소 사이즈 기존 250px -> 150px로 수정 */
+#modal_wrap .btnSection [class*='btn_'] {min-width:150px; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
+/* 2024-03-11 버튼 최소 사이즈 기존 250px -> 150px로 수정 */
 #modal_wrap .btnSection [class*='btn_'] em {padding:10px; font-size:13px; font-style:normal; display:block;}
 
 #modal_wrap .btnSection .btn_cancel {border-color:#3b4c80;}
