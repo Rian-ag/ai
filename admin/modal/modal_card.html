@@ -40,8 +40,28 @@
                     <th>요약/정리 유형 선택 및 실행</th>
                     <td>
                         <div class="check_group">
-                            <label class="check" for="type02-1"><input type="radio" id="type02-1" name="type-2" /> CARD Style</label>
-                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-2" disabled /> CUBE Style</label>
+                            <label class="check" for="type02-1"><input type="radio" id="type02-1" name="type-2" disabled /> CARD Style</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-2" /> CUBE Style</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Type 선택 
+                        <!-- 2024-03-11 tooltip 관련 html 태그수정 -->
+                        <button class="badge_info">
+                            <i>i</i>
+                            <p class="info_tooltip">선택한 Type에 따라 챗봇이 요약/정리 내용을 추천해드립니다.</p>
+                        </button>
+                        <!-- // 2024-03-11 tooltip 관련 html 태그수정 -->
+                        
+                    </th>
+                    <td>
+                        <div class="check_group">
+                            <label class="check" for="type02-1"><input type="radio" id="type02-1" name="type-2"/> 기본</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-2"/> 간략하게</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-2"/> 강의계획서 형태로</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-2"/> Cube 한개만 존재</label>
                         </div>
                     </td>
                 </tr>
