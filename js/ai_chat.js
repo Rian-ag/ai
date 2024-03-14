@@ -45,7 +45,7 @@ const ai_babysuni = {
 
             const panel_w = Number(panel.getAttribute('data-width')),
             min = 480,
-            max = 780;
+            max = document.getElementById('wrap').clientWidth - 60;
 
             if(min > panel_w) {
                 panel.style.width = min+'px'
