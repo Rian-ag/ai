@@ -2,6 +2,10 @@
 .ai_modal_content h4 {margin-bottom:30px;}
 .ai_modal_content .btnSection {margin-top:30px;}
 .ai_modal_content button {background-color:transparent; border:0;}
+.ai_modal_content .explain {margin-bottom:20px;}
+.ai_modal_content .explain li {padding-left:15px; position:relative;}
+.ai_modal_content .explain li + li {margin-top:8px;}
+.ai_modal_content .explain li:before {content:'*'; position:absolute; top:2px; left:0;}
 
 .ai_modal_content .table_wrap table {width:100%; border-collapse:collapse;}
 .ai_modal_content .table_wrap th, .table_wrap td {padding:15px; font-size:13px; border:1px solid #f1f1f1;}
