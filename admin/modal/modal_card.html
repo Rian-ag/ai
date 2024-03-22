@@ -1,5 +1,27 @@
 <link href="../css/modal.css" rel="stylesheet">
 
+<script>
+    $(function(){
+        $('.input').delegate('.placeholder', 'click', function(){
+            $(this).siblings('textarea').focus();
+            $(this).hide();
+        });
+
+        $('.input').delegate('textarea', 'focus', function(){
+            $(this).siblings('.placeholder').hide();
+        });
+
+        $('.input').delegate('textarea', 'blur', function(){
+            console.log($(this).val().length);
+            if($(this).val().length > 0){
+                $(this).siblings('.placeholder').hide();
+            } else {
+                $(this).siblings('.placeholder').show();
+            }
+        });
+    });
+</script>
+
 <div class="ai_modal_content">
     <!-- 2024-03-12 팝업 타이틀수정 -->
     <h4>AI 요약</h4>
@@ -43,7 +65,12 @@
                 </tr>
                 <tr>
                     <th>내용 입력</th>
-                    <td><textarea></textarea></td>
+                    <td>
+                        <label class="input">
+                            <textarea></textarea>
+                            <i class="placeholder">과정소개에 필요한 내용을 자유롭게 입력해 주세요.</i>
+                        </label>
+                    </td>
                 </tr>
                 <tr>
                     <th>요약/정리 유형</th>
