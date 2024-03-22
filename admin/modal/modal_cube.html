@@ -5,6 +5,10 @@
     <h4>AI 요약</h4>
     <!-- // 2024-03-12 팝업 타이틀수정 -->
 
+    <ul class="explain">
+        <li>'직접입력'의 경우 직접입력한 내용을 선택한 Type에 따라 AI가 요약/정리해 드립니다.</li>
+    </ul>
+
     <div class="table_wrap">
         <table class="type_02">
             <colgroup>
@@ -32,7 +36,7 @@
                     <td><textarea></textarea></td>
                 </tr>
                 <tr>
-                    <th>요약/정리 유형 선택 및 실행</th>
+                    <th>요약/정리 유형</th>
                     <td>
                         <div class="check_group">
                             <!-- 2024-03-12 라디오 버튼 name 변경 -->
@@ -55,11 +59,17 @@
                     </th>
                     <td>
                         <div class="check_group">
+<<<<<<< HEAD
+                            <label class="check" for="type02-1"><input type="radio" id="type02-1" name="type-3"/> 기본형</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-3"/> 상세하게</label>
+                            <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-3"/> 캐주얼하게</label>
+=======
                             <!-- 2024-03-12 라디오 버튼 name 변경 -->
                             <label class="check" for="type02-1"><input type="radio" id="type02-1" name="type-3"/> 기본</label>
                             <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-3"/> 상세하게</label>
                             <label class="check" for="type02-2"><input type="radio" id="type02-2" name="type-3"/> 캐주얼하게</label>
                             <!-- // 2024-03-12 라디오 버튼 name 변경 -->
+>>>>>>> b3acabbd8b499985ffeabc7dce21fe308aedb2b4
                         </div>
                     </td>
                 </tr>
@@ -102,6 +112,6 @@
 
     <div class="btnSection">
         <button class="btn_cancel" onclick="modal.open('#alert_wrap', 'alert_02');"><em>초기화</em></button>
-        <button class="btn_confirm" onclick="modal.open('#alert_wrap', 'alert_03');"><em>확인</em></button>
+        <button class="btn_confirm" onclick="modal.open('#alert_wrap', 'alert_03');"><em>닫기</em></button>
     </div>
 </div>
