@@ -69,6 +69,12 @@
 .ai_babysuni .chat_inner:after {background-image:url('../images/icon_ai_chat_split.png'); background-repeat:no-repeat; background-size:250px auto; content:''; position:absolute; top:0; display:block;}
 .ai_babysuni .chat_inner > * + * {margin-top:20px;}
 
+.ai_babysuni .chat_inner ol {margin-left:20px;}
+.ai_babysuni .chat_inner ol li a {color:#222; font-weight:700;}
+.ai_babysuni .chat_inner ol > * + * {margin-top:20px;}
+.ai_babysuni .chat_inner ol span {margin-left:5px; color:#DD052B; font-weight:400;}
+.ai_babysuni .chat_inner dl dd ul{margin-left:20px;}
+
 @keyframes scale {
     from {
       scale:0;
@@ -127,3 +133,14 @@
   .ai_babysuni .ai_chat_wrap.active {transform:translateX(-10px);}
 }
 .scrollLock {overflow:hidden;}
+
+/* 2024-04-01 path 추가에 따른 css 내용 추가 */
+.path_wrap {position:relative; display:flex;}
+.path_wrap em {margin-right:20px; color:#222; font-size:12px; font-weight:700; display:flex; align-items:flex-start; justify-content:center;}
+.path_wrap em::before{content:''; width:9px; height:9px; margin-top:3px; margin-right:10px; border-radius:50%; background-color:#222; display:inline-block; position:relative; z-index:99;}
+.path_wrap::before {content:''; width:1px; height:calc(100% + 20px); margin-left:4px; border-left:1px dotted #d9d9d9;  display:inline-block; position:absolute;}
+.chat_inner > .last::before {display:none;}
+.path_wrap dl {font-size:15px;}
+.path_wrap dl dt {color:#222; font-weight:700;}
+.path_wrap dl dd {margin-top:4px;}
+/* //2024-04-01 path 추가에 따른 css 내용 추가 */
