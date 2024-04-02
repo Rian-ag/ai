@@ -428,7 +428,7 @@ const sam_fnc = {
                         </dd>
                     </dl>
                 </div>
-                <div class="swiper-container">
+                <section class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="./images/sam_swiper_01.png" alt="" /></div>
                         <div class="swiper-slide"><img src="./images/sam_swiper_02.png" alt="" /></div>
@@ -438,9 +438,12 @@ const sam_fnc = {
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                </div>
+                </section>
             </div>
-        </div>`);
+        </div>`)
+        
+        console.log(document.querySelectorAll('.path_wrap'))
+        ;
 
         setTimeout(function(){
             defaultOptions = {

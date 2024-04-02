@@ -138,8 +138,8 @@
 .path_wrap {position:relative; display:flex;}
 .path_wrap em {margin-right:20px; color:#222; font-size:12px; font-weight:700; display:flex; align-items:flex-start; justify-content:center;}
 .path_wrap em::before{content:''; width:9px; height:9px; margin-top:3px; margin-right:10px; border-radius:50%; background-color:#222; display:inline-block; position:relative; z-index:99;}
-.path_wrap::before {content:''; width:1px; height:calc(100% + 20px); margin-left:4px; border-left:1px dotted #d9d9d9;  display:inline-block; position:absolute;}
-.chat_inner > .last::before {display:none;}
+.path_wrap::before {content:''; width:1px; height:calc(100% + 20px); margin-top:3px; margin-left:4px; border-left:1px dotted #d9d9d9;  display:inline-block; position:absolute;}
+.chat_inner > div.path_wrap:last-of-type::before {display:none !important;}
 .path_wrap dl {font-size:15px;}
 .path_wrap dl dt {color:#222; font-weight:700;}
 .path_wrap dl dd {margin-top:4px;}
