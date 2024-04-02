@@ -109,10 +109,11 @@ function autoResize(textarea) {
     textarea.style.height = textarea.scrollHeight + 'px';
 }
 
-function scroll_top(_target) {
+function scroll_bottom(_target) {
     _target.animate({
-        scrollTop:0
+        scrollTop:_target.height(),
     });
+    console.log(_target.height())
 }
 
 const sam_fnc = {
