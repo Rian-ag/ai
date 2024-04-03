@@ -44,7 +44,7 @@
 .ai_babysuni .ai_chat_wrap .ai_chat_cont::-webkit-scrollbar-thumb {background:rgba(0,0,0,0.2); background-clip:padding-box; border:3px solid transparent; border-radius:8px;}
 .ai_babysuni .ai_chat_wrap .ai_chat_cont::-webkit-scrollbar-track {background:transparent;}
 
-.ai_babysuni .ai_chat_cont_intro {height:100%; padding:0 53px; word-break:keep-all; text-align:center; display:flex; align-items:center; justify-content:center; flex-direction:column;}
+.ai_babysuni .ai_chat_cont_intro {height:100%; padding:0 53px; word-break:keep-all; text-align:center; display:flex; flex-direction:column; align-items:center;}
 .ai_babysuni .ai_chat_cont_inner {display:none;}
 
 .ai_babysuni .ai_chat_wrap.chatting .ai_chat_cont_intro {display:none;}
