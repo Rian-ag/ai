@@ -32,24 +32,24 @@ header ul a {padding:5px 8px; color:#222; font-size:14px; display:block;}
 #container .table_wrap table {width:100%; border-collapse:collapse;}
 #container .table_wrap th, #container .table_wrap td {padding:8px; font-size:13px; border:1px solid #f1f1f1;}
 
-#modal_wrap {background-color:rgba(0,0,0,0.35); position:fixed; top:0; right:0; bottom:0; left:0; z-index:1; display:none;}
-#modal_wrap.active {display:block;}
-#modal_wrap .modal_container {border-radius:4px; box-shadow:0 0 16px 4px rgba(0,0,0,0.2); overflow:hidden; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
-#modal_wrap .modal_inner {width:800px; max-height:800px; padding:15px; background-color:#fff; overflow:auto;}
-#modal_wrap .modal_content {overflow:auto;}
-#modal_wrap .btn_close {width:25px; height:25px; font-size:0; background-color:transparent; border:0; position:absolute; top:20px; right:20px; cursor:pointer;}
-#modal_wrap .btn_close:before, #modal_wrap .btn_close:after {width:100%; margin-top:10px; border-top:1px solid #222; content:''; position:absolute; top:0; left:0;}
-#modal_wrap .btn_close:before {transform:rotate(-45deg);}
-#modal_wrap .btn_close:after {transform:rotate(45deg);}
+#ai_modal_wrap {background-color:rgba(0,0,0,0.35); position:fixed; top:0; right:0; bottom:0; left:0; z-index:1; display:none;}
+#ai_modal_wrap.active {display:block;}
+#ai_modal_wrap .modal_container {border-radius:4px; box-shadow:0 0 16px 4px rgba(0,0,0,0.2); overflow:hidden; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+#ai_modal_wrap .modal_inner {width:800px; max-height:800px; padding:15px; background-color:#fff; overflow:auto;}
+#ai_modal_wrap .modal_content {overflow:auto;}
+#ai_modal_wrap .btn_close {width:25px; height:25px; font-size:0; background-color:transparent; border:0; position:absolute; top:20px; right:20px; cursor:pointer;}
+#ai_modal_wrap .btn_close:before, #ai_modal_wrap .btn_close:after {width:100%; margin-top:10px; border-top:1px solid #222; content:''; position:absolute; top:0; left:0;}
+#ai_modal_wrap .btn_close:before {transform:rotate(-45deg);}
+#ai_modal_wrap .btn_close:after {transform:rotate(45deg);}
 
-#modal_wrap .modal_inner:has(.modal_content + .btnSection) .modal_content {height:calc(100% - 80px);}
-#modal_wrap .modal_content + .btnSection {padding:20px 0; position:absolute; right:0; bottom:0; left:0;}
-#modal_wrap .btnSection {display:flex; gap:10px; justify-content:center;}
+#ai_modal_wrap .modal_inner:has(.modal_content + .btnSection) .modal_content {height:calc(100% - 80px);}
+#ai_modal_wrap .modal_content + .btnSection {padding:20px 0; position:absolute; right:0; bottom:0; left:0;}
+#ai_modal_wrap .btnSection {display:flex; gap:10px; justify-content:center;}
 /* 2024-03-11 버튼 최소 사이즈 기존 250px -> 150px로 수정 */
-#modal_wrap .btnSection [class*='btn_'] {min-width:150px; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
+#ai_modal_wrap .btnSection [class*='btn_'] {min-width:150px; background-color:transparent; border:1px solid #3b4c80; border-radius:4px; display:block;}
 /* 2024-03-11 버튼 최소 사이즈 기존 250px -> 150px로 수정 */
-#modal_wrap .btnSection [class*='btn_'] em {padding:10px; font-size:13px; font-style:normal; display:block;}
+#ai_modal_wrap .btnSection [class*='btn_'] em {padding:10px; font-size:13px; font-style:normal; display:block;}
 
-#modal_wrap .btnSection .btn_cancel {border-color:#3b4c80;}
-#modal_wrap .btnSection .btn_cancel em {color:#3b4c80;}
-#modal_wrap .btnSection .btn_confirm em {color:#fff; background-color:#3b4c80;}
+#ai_modal_wrap .btnSection .btn_cancel {border-color:#3b4c80;}
+#ai_modal_wrap .btnSection .btn_cancel em {color:#3b4c80;}
+#ai_modal_wrap .btnSection .btn_confirm em {color:#fff; background-color:#3b4c80;}
