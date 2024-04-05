@@ -9,6 +9,7 @@
 .ai_babysuni .ai_button_wrap .message_wrap > * {margin:0; padding:0;}
 .ai_babysuni .ai_button_wrap .ai_button {width:54px; padding:0; position:absolute; right:0; bottom:-80px; cursor:pointer; display:block;}
 
+/* 2024-04-05 #ai_chat_wrap 아이디 추가 */
 .ai_babysuni #ai_chat_wrap.ai_chat_wrap {width:480px; background-color:#fff; border:1px solid #d9d9d9; border-radius:16px; overflow:hidden; position:fixed; top:0; right:0; bottom:0; display:flex; flex-direction:column; transform:translateX(100%); transition:transform 0.25s;}
 .ai_babysuni #ai_chat_wrap.ai_chat_wrap.active {transform:translateX(-1px);}
 .ai_babysuni #ai_chat_wrap.ai_chat_wrap.chatting {background-color:#efefef;}
@@ -149,3 +150,4 @@
 /* 2024-04-02 list 추가 관련 css 내용 추가 */
 #ai_chat_wrap .chat_inner > dl > * + dd {margin-bottom:20px;}
 /* //2024-04-02 list 추가 관련 css 내용 추가 */
+/* //2024-04-05 #ai_chat_wrap 아이디 추가 */
