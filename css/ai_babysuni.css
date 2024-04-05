@@ -65,8 +65,9 @@
 .ai_babysuni #ai_chat_wrap .chat_sec + .chat_sec {margin-top:30px;}
 .ai_babysuni #ai_chat_wrap .chat_sec.ai:before {width:48px; height:64px; margin-right:14px; background:url('../images/btn_ai_icon.png') 50% no-repeat; background-size:cover; content:''; display:block;}
 .ai_babysuni #ai_chat_wrap .chat_sec.user {justify-content:end;}
-
-.ai_babysuni #ai_chat_wrap .ai_chat_cont_inner .chat_inner {max-width:calc(100% - 40px); padding:20px; word-wrap:break-word; box-sizing:border-box; position:relative; display:inline-block; animation:0.25s scale;}
+/* 2024-04-05 color 수정 */
+.ai_babysuni #ai_chat_wrap .ai_chat_cont_inner .chat_inner {max-width:calc(100% - 40px); padding:20px; color:#222; word-wrap:break-word; box-sizing:border-box; position:relative; display:inline-block; animation:0.25s scale;}
+/* //2024-04-05 color 수정 */
 .ai_babysuni #ai_chat_wrap .ai_chat_cont_inner .chat_inner:after {background-image:url('../images/icon_ai_chat_split.png'); background-repeat:no-repeat; background-size:250px auto; content:''; position:absolute; top:0; display:block;}
 .ai_babysuni #ai_chat_wrap .ai_chat_cont_inner .chat_inner > * + * {margin-top:20px;}
 
@@ -96,7 +97,9 @@
 .ai_babysuni #ai_chat_wrap .chat_sec.user .chat_inner:after {width:9px; height:15px; background-position:-140px 0; right:-6px;}
 
 .ai_babysuni #ai_chat_wrap .keyword {list-style:none; display:inline-flex; justify-content:center;  align-items:center; flex-wrap:wrap; gap:16px;}
-.ai_babysuni #ai_chat_wrap .keyword button {padding:12px 20px; color:#666; font-size:14px; background-color:#fff; border:1px solid #d9d9d9; border-radius:22px; transition:all 0.25s;}
+/* 2024-04-05 border-color 수정 */
+.ai_babysuni #ai_chat_wrap .keyword button {padding:12px 20px; color:#222; font-size:14px; background-color:#fff; border:1px solid #999; border-radius:22px; transition:all 0.25s;}
+/* //2024-04-05 border-color 수정 */
 .ai_babysuni #ai_chat_wrap .keyword button.active {padding:11px 20px; color:#DD052B; font-weight:bold; background-color:rgba(221, 5, 43, 0.05); border-color:#DD052B;}
 
 .ai_babysuni #ai_chat_wrap .comment_action {margin-top:20px; padding-top:12px; border-top:1px solid #efefef; list-style:none; display:flex; gap:16px;}

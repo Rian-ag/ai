@@ -216,12 +216,12 @@ const sam_fnc = {
             // })
 
             defaultOptions = {
-                slidesPerView: 1,
                 loopAdditionalSlides : 1,
                 speed: 1000,
                 width: 220,
-                spaceBetween: 30,
-                slidesOffsetBefore : 50,
+                spaceBetween: 20,
+                slidesOffsetBefore: 30,
+                slidesOffsetAfter: -30,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
@@ -359,10 +359,12 @@ const sam_fnc = {
 
         setTimeout(function(){
             defaultOptions = {
-                loop: true,
+                loopAdditionalSlides : 1,
                 speed: 1000,
-                width: 280,
+                width: 220,
                 spaceBetween: 20,
+                slidesOffsetBefore: 30,
+                slidesOffsetAfter: -30,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
@@ -465,10 +467,12 @@ const sam_fnc = {
 
         setTimeout(function(){
             defaultOptions = {
-                loop: true,
+                loopAdditionalSlides : 1,
                 speed: 1000,
-                width: 280,
+                width: 220,
                 spaceBetween: 20,
+                slidesOffsetBefore: 30,
+                slidesOffsetAfter: -30,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
