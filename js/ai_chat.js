@@ -200,11 +200,28 @@ const sam_fnc = {
         </div>`);
 
         setTimeout(function(){
+
+            // var swiper = new Swiper(".swiper-container",{
+            //     slidesPerView: 1,
+            //     loop: false,
+            //     loopAdditionalSlides : 1,
+            //     speed: 1000,
+            //     width: 220,
+            //     spaceBetween: 20,
+            //     slidesOffsetBefore : 50,
+            //     navigation: {
+            //         nextEl: ".swiper-button-next",
+            //         prevEl: ".swiper-button-prev",
+            //       }, 
+            // })
+
             defaultOptions = {
-                loop: true,
+                slidesPerView: 1,
+                loopAdditionalSlides : 1,
                 speed: 1000,
-                width: 280,
-                spaceBetween: 20,
+                width: 220,
+                spaceBetween: 30,
+                slidesOffsetBefore : 50,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
@@ -213,11 +230,11 @@ const sam_fnc = {
                 // pagination,
                 // autoplay: {
                 //     delay: 500,
-                //     disableOnInteraction: false,
+                //     disableOnInteraction: true,
                 // },
             }
             var swiper = new Swiper(".swiper-container", defaultOptions)
-        });
+        },0);
     },
     text: function(){
             $('.ai_chat_cont_inner').append(`

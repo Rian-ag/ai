@@ -23,9 +23,9 @@
 }
 
 /* 2024-04-02 swiper 관련 css 수정 */
-.swiper-slide {margin-left:5px;  margin-right:20px !important;}
-.swiper-container-horizontal {overflow:hidden !important; border-radius:11px !important;}
 /* //2024-04-02 swiper 관련 css 수정 */
+.swiper-slide {width:220px !important;}
+.swiper-slide img {width:100% !important;}
 
 .swiper-container-vertical > .swiper-wrapper {
   -webkit-box-orient: vertical;
@@ -165,11 +165,9 @@
 [class*='swiper-button-next'] {
   position: absolute;
   top: 20px;
-  width: 30px;
+  width: 25px;
   height: 100%;
   background-color: #fff;
-  border:1px solid #d9d9d9;
-  border-radius:12px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
